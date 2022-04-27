@@ -4,9 +4,9 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  actions: write
-
+# NOTE: The original repo does not allow write access for actions
+# On the forked repo, you'll need to enable it to make this work.
+# Once merged back into the main repo, it should run automatically.
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
